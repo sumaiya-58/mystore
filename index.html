@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      const products = [
+        { id: 1, name: "bracelets", des:"this is descrption of bracelets", price: 250 },
+        { id: 2, name: "chains", des:"this is descrption of bracelets",price: 450 },
+        { id: 3, name: "keychains",des:"this is descrption of bracelets", price: 170 },
+      ];
+      const cart = {};
+      const addToCart = (id) => {
+        /*const score={};
+        score["maths"]=95;
+        score["maths"]+=2;
+        console.log(score);
+        */
+        if (!cart[id]) cart[id]=1;
+        //cart[id] = 1;
+        console.log(cart);
+        showCart();
+        add(id);
+        sub(id);
+        
+      };
+      const add=(id)=>{
+          cart[id]+=1
+          showCart();
+          //console.log(cart)
+
+        }
+        const sub=(id)=>{
+          cart[id]=cart[id]-1;
+          cart[id]<1&& delete cart[id];
+          showCart();
+          console.log(cart)
+        }
+        
+        const showTotal=()=>{
+          let total=products.reduce((sum,value)=> {
+           /*if  (cart[value.id])
+           return sum + value.price * cart[value.id];   
+           }return sum;*/
+
+          return sum + value.price * (cart[value.id]?cart[value.id]:0);
+
+          },0);
+          divtotal.innerHTML=total;
+        };
+      const showCart = () => {
+        let str = "";
+
+        products.map((value) => {
+          if (cart[value.id]) {
+            str += `
+            <li>${value.name}-$${value.price}-<button onclick='sub(${value.id})'>-</button>${cart[value.id]}<button onclick='add(${value.id})'>+</button>-$${value.price*cart[value.id]}</li>
+            `;
+          }
+        });
+        divCart.innerHTML = str;
+        let count=Object.keys(cart).length
+        item.innerHTML=count;
+        showTotal()
+      };
+      const displayCart=()=>
+      {
+       // divcartblock.style.display="block"
+       divcartblock.style.left="80%"
+      }
+      const hidecart=()=>{
+        divcartblock.style.left="100%"
+      }
+      const showProducts = () => {
+        let str = "<div class='row'>";
+        products.map((value) => {
+          str += `
+          <div class="box">
+          <h3>${value.name}</h3>
+          <p>${value.des}</p>
+          <h4>$${value.price}</h4>
+          <button onclick=addToCart(${value.id})>Add to Cart</button></li>
+          </div>
+          `;
+        });
+        divProducts.innerHTML = str+"</div>";
+      };
+    </script>
+  </head>
+  <body onload="showProducts()">
+    <div class="con">
+    <div class="header">
+    <h1>My Store</h1>
+    
+    <h3 onclick='displayCart()'>Cart:<spam  id ="item"></spam></h3>
+    
+    </div>
+    <div class="productBlock">
+
+      <div id="divProducts"></div>
+    </div>
+    <div id="divcartblock" class="cartBlock" >       
+    <h3>My Cart</h3>
+    <div id="divCart"></div>
+    <h3>Total Amount</h3>
+    <div id="divtotal"></div>
+    <button onclick='hidecart()'>close</button>
+    
+  </div>
+ </div>
+    <hr>
+    <h4>@copyright 2025. All rights reserved.</h4>
+     
+  </body>
+</html>
+
+
