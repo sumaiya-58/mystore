@@ -1,0 +1,59 @@
+[
+    {
+      "id": 1,
+      "url": "https://i.pinimg.com/736x/dd/ce/8b/ddce8be4d2a14a700f30b09fc285c6f1.jpg",
+      "name": "Bracelets",
+      "des": "Elegant handcrafted bracelets that add a touch of sophistication.",
+      "price": 250
+    },
+    {
+      "id": 2,
+      "url": "https://i.pinimg.com/736x/22/06/36/220636daa38ec75cd2dc080470e52d00.jpg",
+      "name": "Chains",
+      "des": "Chic chain accessories designed for the modern trendsetter.",
+      "price": 450
+    },
+    {
+      "id": 3,
+      "url": "https://i.pinimg.com/736x/6b/21/d3/6b21d30faac2faa30f312ccbb44c0586.jpg",
+      "name": "Keychains",
+      "des": "Sleek and stylish keychains to carry your keys with flair.",
+      "price": 170
+    },
+    {
+      "id": 4,
+      "url": "https://i.pinimg.com/474x/19/03/90/19039018fe309eb9f442a3f1f2d3e90a.jpg",
+      "name": "Hairpins",
+      "des": "Modern hairpins crafted to keep your style on point.",
+      "price": 190
+    },
+    {
+      "id": 5,
+      "url": "https://i.pinimg.com/474x/00/95/7c/00957c048f5f25c69edc63961f40dbad.jpg",
+      "name": "Heels",
+      "des": "Trendy heels that perfectly blend comfort and style.",
+      "price": 200
+    },
+    {
+      "id": 6,
+      "url": "https://i.pinimg.com/736x/a6/42/fc/a642fc2a4d691f55202a88f78f104f73.jpg",
+      "name": "High Heels",
+      "des": "Stylish high heels for a confident, elegant stride.",
+      "price": 250
+    },
+    {
+      "id": 7,
+      "url": "https://i.pinimg.com/474x/56/f0/2a/56f02a2a2e563fd9a88e0e42701ca59a.jpg",
+      "name": "Bags",
+      "des": "Fashionable bags that complete any look effortlessly.",
+      "price": 350
+    },
+    {
+      "id": 8,
+      "url": "https://i.pinimg.com/736x/a5/2f/42/a52f4248f9ddc4612cc3638b8a4ee371.jpg",
+      "name": "Ear Rings",
+      "des": "Exquisite ear rings to add a touch of sparkle to your day.",
+      "price": 150
+    }
+  ]
+  
