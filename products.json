@@ -4,28 +4,28 @@
       "url": "https://i.pinimg.com/736x/dd/ce/8b/ddce8be4d2a14a700f30b09fc285c6f1.jpg",
       "name": "Bracelets",
       "des": "Elegant handcrafted bracelets that add a touch of sophistication.",
-      "price": 250
+      "price": 50
     },
     {
       "id": 2,
       "url": "https://i.pinimg.com/736x/22/06/36/220636daa38ec75cd2dc080470e52d00.jpg",
       "name": "Chains",
       "des": "Chic chain accessories designed for the modern trendsetter.",
-      "price": 450
+      "price": 110
     },
     {
       "id": 3,
       "url": "https://i.pinimg.com/736x/6b/21/d3/6b21d30faac2faa30f312ccbb44c0586.jpg",
       "name": "Keychains",
       "des": "Sleek and stylish keychains to carry your keys with flair.",
-      "price": 170
+      "price": 80
     },
     {
       "id": 4,
       "url": "https://i.pinimg.com/474x/19/03/90/19039018fe309eb9f442a3f1f2d3e90a.jpg",
       "name": "Hairpins",
       "des": "Modern hairpins crafted to keep your style on point.",
-      "price": 190
+      "price": 90
     },
     {
       "id": 5,
@@ -54,6 +54,36 @@
       "name": "Ear Rings",
       "des": "Exquisite ear rings to add a touch of sparkle to your day.",
       "price": 150
+    },
+    {
+      "id": 9,
+      "url": "https://i.pinimg.com/736x/57/4a/98/574a981e78bb1e7cdfab15ba1a6eeda5.jpg",
+      "name": "Rings",
+      "des": "Elegant and stylish rings that add a touch of sophistication to any outfit.",
+      "price": 100
+    },
+    {
+      "id": 10,
+      "url": "https://i.pinimg.com/736x/d7/56/dc/d756dc751ffad1410294ad4f730b9b5a.jpg",
+      "name": "Dress",
+      "des": "Chic and comfortable dress perfect for any occasion, blending elegance with ease.",
+      "price": 270
+    },
+    {
+      "id": 11,
+      "url": "https://i.pinimg.com/736x/3a/38/f5/3a38f5d2a8d4f09f8070f373214b5f05.jpg",
+      "name": "Jeans Outfit",
+      "des": "Trendy and versatile jeans outfit designed for a stylish and modern look.",
+      "price": 200
+    },
+    {
+      "id": 12,
+      "url": "https://i.pinimg.com/736x/91/08/24/910824d628ea9eb3d0b77d3314fbb067.jpg",
+      "name": "Cargo Pants",
+      "des": "Comfortable and functional cargo pants with a stylish edge for everyday wear.",
+      "price": 110
     }
+    
+    
   ]
   

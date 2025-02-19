@@ -47,7 +47,7 @@ const showCart = () => {
             <button onclick="decrement(${product.id})">-</button>
             ${cart[product.id]}
             <button onclick="increment(${product.id})">+</button>
-            = $${product.price * cart[product.id]}
+            = ${product.price * cart[product.id]}
           </div>
         </li>
       `;
@@ -91,7 +91,7 @@ const showOrders = () => {
           <p>Customer: ${order.customer}</p>
           <p>Order Value: $${order.orderValue}</p>
           <p>Items Count: ${Object.keys(order.items).length}</p>
-          <p>Status: ${order.status}</p>
+          <p>Status: ${order.status}</p><br>
         </div>
       `;
     }
