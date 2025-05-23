@@ -162,32 +162,45 @@ const showMain = () => {
 /* ---------- LOGIN & REGISTRATION ---------- */
 function showLogin() {
   let str = `
-    <div class="login">
-      <h2>Login Form</h2>
-      <div id="msg"></div>
-      <p><input id="email" type="text" placeholder="Email"></p>
-      <p><input id="password" type="password" placeholder="Password"></p>
-      <button onclick="chkUser()">Log In</button>
-      <p>Not a member? <button onclick="showForm()">Create Account</button></p>
+    <div class="auth-container">
+      <div class="auth-box">
+        <img src="https://i.pinimg.com/736x/9e/92/c5/9e92c5995a91e1d98c326abaeb3439f0.jpg" alt="Elegant Fashion Login" class="auth-image" />
+        <div class="auth-form">
+          <h2>Welcome Back</h2>
+          <div id="msg"></div>
+          <input id="email" type="text" placeholder="Email Address" />
+          <input id="password" type="password" placeholder="Password" />
+          <button onclick="chkUser()">Log In</button>
+          <p>New here? <span onclick="showForm()" class="switch-link">Create an account</span></p>
+        </div>
+      </div>
     </div>
   `;
   document.getElementById("root").innerHTML = str;
 }
 
+
 function showForm() {
   let str = `
-    <div class="registration">
-      <h2>Registration Form</h2>
-      <p><input type="text" id="name" placeholder="Name"></p>
-      <p><input type="text" id="email" placeholder="Email"></p>
-      <p><input type="password" id="password" placeholder="Password"></p>
-      <p><input type="date" id="dob"></p>
-      <p><button onclick="addUser()">Submit</button></p>
-      <p>Already a member? <button onclick="showLogin()">Login Here</button></p>
+    <div class="auth-container">
+      <div class="auth-box">
+        <img src="https://i.pinimg.com/736x/9e/92/c5/9e92c5995a91e1d98c326abaeb3439f0.jpg" alt="Elegant Signup" class="auth-image" />
+        <div class="auth-form">
+          <h2>Create an Account</h2>
+          <p><input type="text" id="name" placeholder="Name"></p>
+          <p><input type="text" id="email" placeholder="Email"></p>
+          <p><input type="password" id="password" placeholder="Password"></p>
+          <p><input type="date" id="dob"></p>
+          <button onclick="addUser()">Register</button>
+          <p>Already a member? <span onclick="showLogin()" class="switch-link">Login Here</span></p>
+        </div>
+      </div>
     </div>
   `;
   document.getElementById("root").innerHTML = str;
 }
+
+
 
 function chkUser() {
   let email = document.getElementById("email").value;

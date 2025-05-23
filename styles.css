@@ -4,10 +4,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f3e5d8; /* Light Beige */
+  background-color: #f3e5d8; /* Fallback Light Beige */
+  background-image: url('assets/p1.png'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
   color: #5c4033; /* Dark Brown */
 }
 
